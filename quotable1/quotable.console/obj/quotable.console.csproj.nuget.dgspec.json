@@ -1,0 +1,115 @@
+{
+  "format": 1,
+  "restore": {
+    "H:\\CS480B\\quotable1\\quotable.console\\quotable.console.csproj": {}
+  },
+  "projects": {
+    "H:\\CS480B\\quotable1\\quotable.console\\quotable.console.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "H:\\CS480B\\quotable1\\quotable.console\\quotable.console.csproj",
+        "projectName": "quotable.console",
+        "projectPath": "H:\\CS480B\\quotable1\\quotable.console\\quotable.console.csproj",
+        "packagesPath": "C:\\Users\\ttran20\\.nuget\\packages\\",
+        "outputPath": "H:\\CS480B\\quotable1\\quotable.console\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\ttran20\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.1": {
+            "projectReferences": {
+              "H:\\CS480B\\quotable1\\quotable.core\\quotable.core.csproj": {
+                "projectPath": "H:\\CS480B\\quotable1\\quotable.core\\quotable.core.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.1": {
+          "dependencies": {
+            "Microsoft.NETCore.App": {
+              "target": "Package",
+              "version": "[2.1.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    },
+    "H:\\CS480B\\quotable1\\quotable.core\\quotable.core.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "H:\\CS480B\\quotable1\\quotable.core\\quotable.core.csproj",
+        "projectName": "quotable.core",
+        "projectPath": "H:\\CS480B\\quotable1\\quotable.core\\quotable.core.csproj",
+        "packagesPath": "C:\\Users\\ttran20\\.nuget\\packages\\",
+        "outputPath": "H:\\CS480B\\quotable1\\quotable.core\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\ttran20\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "dependencies": {
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    }
+  }
+}
