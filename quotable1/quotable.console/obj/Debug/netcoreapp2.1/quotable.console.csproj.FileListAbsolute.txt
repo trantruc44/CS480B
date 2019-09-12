@@ -1,0 +1,14 @@
+H:\CS480B\quotable\quotable.console\bin\Debug\netcoreapp2.1\quotable.console.deps.json
+H:\CS480B\quotable\quotable.console\bin\Debug\netcoreapp2.1\quotable.console.runtimeconfig.json
+H:\CS480B\quotable\quotable.console\bin\Debug\netcoreapp2.1\quotable.console.runtimeconfig.dev.json
+H:\CS480B\quotable\quotable.console\bin\Debug\netcoreapp2.1\quotable.console.dll
+H:\CS480B\quotable\quotable.console\bin\Debug\netcoreapp2.1\quotable.console.pdb
+H:\CS480B\quotable\quotable.console\bin\Debug\netcoreapp2.1\quotable.core.dll
+H:\CS480B\quotable\quotable.console\bin\Debug\netcoreapp2.1\quotable.core.pdb
+H:\CS480B\quotable\quotable.console\obj\Debug\netcoreapp2.1\quotable.console.csprojAssemblyReference.cache
+H:\CS480B\quotable\quotable.console\obj\Debug\netcoreapp2.1\quotable.console.csproj.CoreCompileInputs.cache
+H:\CS480B\quotable\quotable.console\obj\Debug\netcoreapp2.1\quotable.console.AssemblyInfoInputs.cache
+H:\CS480B\quotable\quotable.console\obj\Debug\netcoreapp2.1\quotable.console.AssemblyInfo.cs
+H:\CS480B\quotable\quotable.console\obj\Debug\netcoreapp2.1\quotable.console.csproj.CopyComplete
+H:\CS480B\quotable\quotable.console\obj\Debug\netcoreapp2.1\quotable.console.dll
+H:\CS480B\quotable\quotable.console\obj\Debug\netcoreapp2.1\quotable.console.pdb
