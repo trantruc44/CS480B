@@ -2,6 +2,9 @@
 using System.Collections.Generic;
 using System.Linq;
 
+// Author: Truc Tran
+// Date: 9/11/2019
+// Class: CS480B
 
 namespace quotable.core
 {
@@ -20,6 +23,7 @@ namespace quotable.core
 
             foreach (string value in quotes)
             {
+                //print only the number of requested quotes
                 counter++;
                 if (num >= counter)
                 {
