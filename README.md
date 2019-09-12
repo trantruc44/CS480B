@@ -1,1 +1,1 @@
-# CS480B - Intro to Modern Architecture 
+# CS480B - Intro to Modern Service Oriented Architectures 
