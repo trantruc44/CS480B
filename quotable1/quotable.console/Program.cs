@@ -1,6 +1,10 @@
 ﻿using System;
 using quotable.core;
 
+// Author: Truc Tran
+// Date: 9/11/2019
+// Class: CS480B
+
 namespace quotable.console
 {
     class Program
