@@ -1,5 +1,4 @@
-﻿using hailstone.core;
-using System;
+﻿using System;
 using System.Collections.Generic;
 
 
@@ -9,7 +8,7 @@ using System.Collections.Generic;
 namespace HW1.core
 {
     /// <summary>
-    /// Simple random quote provider class
+    ///  Implementation of RandomQuoteProvider
     /// </summary>
     public class SimpleRandomQuoteProvider : RandomQuoteProvider
     {
@@ -18,18 +17,19 @@ namespace HW1.core
         /// </summary>
         /// <param name="num"></param>
         /// <returns></returns>
-        public IEnumerable<string> printNumberOfQuotes(long num)
+        public IEnumerable<string> printNumberofQuotes(long num)
         {
             int counter = 0;
             IEnumerable<string> quotes = new string[] { "People lie, actions don't", "To be or not to be that is the question",
             "Failure is not a person, it's an event", "Let it go"};
 
-            foreach (string value in quotes)
+            //substitute string for var
+            foreach (var index in quotes)
             {
                 counter++;
                 if (num >= counter)
                 {
-                    Console.WriteLine(value);
+                    Console.WriteLine(index);
                 }
             }
             Console.ReadKey();

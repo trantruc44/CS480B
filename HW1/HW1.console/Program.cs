@@ -1,22 +1,29 @@
 ﻿using System;
 using HW1.core;
-
+using System.Collections.Generic;
 
 // Author: Truc Tran
 // Date: 9/19/2019
 // Class: CS480B
 namespace HW1.console
 {
+    /// <summary>
+    /// Contains 2 objects: SimpleRandomQuoteProvider and DefaultRandomQuoteGenerator
+    /// Both calls printNumberOfQuotes 
+    /// </summary>
     class Program
-    {
-        static void Main(string[] args)
+    { 
+         private static void Main(string[] args)
         {
+            IEnumerable<string> quotesList = new string[] { "quote1", "quote2", "quote3", "quote4", "quote5", "quotes6"};
             SimpleRandomQuoteProvider object1 = new SimpleRandomQuoteProvider();
+            DefaultRandomQuoteGenerator object2 = new DefaultRandomQuoteGenerator(quotesList);
 
             if (args.Length > 0)
             {
-                Console.WriteLine("Arguments Passed by the Programmer:" + args[0]);
-                object1.printNumberOfQuotes(Convert.ToInt64(args[0]));
+                Console.WriteLine("Number of quotes wanted (enter a number):" + args[0]);
+                object1.printNumberofQuotes(Convert.ToInt64(args[0]));
+                object2.printNumberofQuotes(Convert.ToInt64(args[0]));
             }
 
             else
@@ -26,10 +33,10 @@ namespace HW1.console
 
             Console.ReadKey();
 
-            // test code
-            object1.printNumberOfQuotes(3);
-            //Console.WriteLine("---------------------");
-            //object1.printNumberOfQuotes(1);
+            // test code to see if simpleRandomQuoteProvider and DefaultRandomQuoteGenerator works
+            object1.printNumberofQuotes(3);
+            Console.WriteLine("---------------------");
+            object2.printNumberofQuotes(4);
 
         }
     }
