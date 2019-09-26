@@ -6,7 +6,7 @@ NOT TO DO LIST:
 1.) Forgetting to use Camelcase notation
 2.) BAD names for variables due to laziness 
 
-SUPRISING/INTERESTING POINT:
+SURPRISING/INTERESTING POINT:
 1.) Magic string since I tend to have repetitive code(s) unknowningly. Having a constant variable can help build better programs.
 2.) Avoid conditionals: Seems quite impossible and more work to use polymorphism. What if you had 100 different cases?    
 
