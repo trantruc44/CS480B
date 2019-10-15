@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using quotable.api.Controllers;
 using quotable.core;
 
 // Author: Truc Tran
@@ -15,6 +16,11 @@ namespace quotable.console
     { 
          private static void Main(string[] args)
         {
+
+            var controller = new quotesController();
+            var actual2 = controller.Get();
+            Console.WriteLine(actual2.Value);
+
             IEnumerable<string> quotesList = new string[] { "quote1", "quote2", "quote3", "quote4", "quote5", "quotes6"};
             SimpleRandomQuoteProvider object1 = new SimpleRandomQuoteProvider();
             DefaultRandomQuoteGenerator object2 = new DefaultRandomQuoteGenerator(quotesList);

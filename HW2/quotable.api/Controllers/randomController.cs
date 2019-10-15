@@ -19,7 +19,7 @@ namespace quotable.api.Controllers
             Random rand = new Random();
             int randQuote = rand.Next(7);
 
-            return quoteController.quotesObjects[randQuote];
+            return quotesController.quotesObjects[randQuote];
         }
 
         // GET: api/random/5
