@@ -6,13 +6,24 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using quotable.api.Models;
 
+// Author: Truc Tran
+// Date: 10/15/2019
+// Class: CS480B
+
 namespace quotable.api.Controllers
 {
+    /// <summary>
+    /// Controller to get a random quote
+    /// </summary>
     [Route("api/[controller]")]
     [ApiController]
     public class randomController : ControllerBase
     {
         // GET: api/random
+        /// <summary>
+        /// Gets a random quote from quotesObjects
+        /// </summary>
+        /// <returns></returns>
         [HttpGet]
         public ActionResult<quotableData> Get()
         {
@@ -24,26 +35,26 @@ namespace quotable.api.Controllers
 
         // GET: api/random/5
         [HttpGet("{id}", Name = "Get")]
-        public string Get(int id)
+        private string Get(int id)
         {
             return "value";
         }
 
         // POST: api/random
         [HttpPost]
-        public void Post([FromBody] string value)
+        private void Post([FromBody] string value)
         {
         }
 
         // PUT: api/random/5
         [HttpPut("{id}")]
-        public void Put(int id, [FromBody] string value)
+        private void Put(int id, [FromBody] string value)
         {
         }
 
         // DELETE: api/random/5
         [HttpDelete("{id}")]
-        public void Delete(int id)
+        private void Delete(int id)
         {
         }
     }

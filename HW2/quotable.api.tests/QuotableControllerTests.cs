@@ -3,15 +3,28 @@ using quotable.api.Controllers;
 using quotable.api.Models;
 using quotable.core;
 
+// Author: Truc Tran
+// Date: 10/15/2019
+// Class: CS480B
+
 namespace Tests
 {
+    /// <summary>
+    ///API Controller Tests
+    /// </summary>
     public class Tests
     {
+        /// <summary>
+        /// Setup
+        /// </summary>
         [SetUp]
         public void Setup()
         {
         }
 
+        /// <summary>
+        /// Test for controller.Get(int value)
+        /// </summary>
         [Test]
         public void Test_Get_Success()
         {
@@ -39,6 +52,9 @@ namespace Tests
             Assert.That(actual.Value.Author, Is.EqualTo("Mark Twain"));
         }
 
+        /// <summary>
+        /// Test for controller.Get()
+        /// </summary>
         [Test]
         public void Test_Get_Success2()
         {
