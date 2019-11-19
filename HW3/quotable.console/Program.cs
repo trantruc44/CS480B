@@ -6,6 +6,11 @@ using quotable.core;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 
+// Author: Truc Tran	
+// Date: 11/19/2019	
+// Class: CS480B
+
+
 namespace lorem.console
 {
     /// <summary>

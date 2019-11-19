@@ -6,6 +6,11 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.EntityFrameworkCore;
 using quotable.core;
 
+// Author: Truc Tran	
+// Date: 11/19/2019	
+// Class: CS480B
+
+
 namespace quotable.api
 {
     /// <summary>

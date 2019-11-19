@@ -5,6 +5,11 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using quotable.core;
 using Quote = quotable.api.Models.Quote;
+
+// Author: Truc Tran	
+// Date: 11/19/2019	
+// Class: CS480B
+
 namespace quotable.api.Controllers
 {
     /// <summary>

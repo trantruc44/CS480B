@@ -8,6 +8,11 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
 
+// Author: Truc Tran	
+// Date: 11/19/2019	
+// Class: CS480B
+
+
 namespace quotable.api
 {
     /// <summary>

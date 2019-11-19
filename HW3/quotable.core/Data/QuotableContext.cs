@@ -3,6 +3,11 @@ using System.Collections.Generic;
 using System.Text;
 using Microsoft.EntityFrameworkCore;
 
+// Author: Truc Tran	
+// Date: 11/19/2019	
+// Class: CS480B
+
+
 namespace quotable.core
 {
     /// <summary>
