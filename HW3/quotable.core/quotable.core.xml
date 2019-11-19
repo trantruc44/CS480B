@@ -1,0 +1,130 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>quotable.core</name>
+    </assembly>
+    <members>
+        <member name="T:quotable.core.Author">
+            <summary>
+            Author of a quote
+            </summary>
+        </member>
+        <member name="M:quotable.core.Author.#ctor">
+            <summary>
+            Generic constructor
+            </summary>
+        </member>
+        <member name="M:quotable.core.Author.#ctor(System.String,System.String)">
+            <summary>
+            constructor
+            </summary>
+            <param name="firstname"></param>
+            <param name="lastname"></param>
+        </member>
+        <member name="P:quotable.core.Author.Id">
+            <summary>
+            Author's unique Id
+            </summary>
+        </member>
+        <member name="P:quotable.core.Author.FirstName">
+            <summary>
+            Author's first name
+            </summary>
+        </member>
+        <member name="P:quotable.core.Author.LastName">
+            <summary>
+            Author's last name
+            </summary>
+        </member>
+        <member name="P:quotable.core.Author.QuoteAuthor">
+            <summary>
+            relation between quote and Author
+            </summary>
+        </member>
+        <member name="T:quotable.core.QuotableContext">
+            <summary>
+            Database context provides access to Author, Quote, and QuoteAuthor
+            </summary>
+        </member>
+        <member name="M:quotable.core.QuotableContext.#ctor(Microsoft.EntityFrameworkCore.DbContextOptions)">
+            <summary>
+            Constructor
+            </summary>
+        </member>
+        <member name="P:quotable.core.QuotableContext.Quotes">
+             <summary>
+            Access all the quotes in the database
+             </summary>
+        </member>
+        <member name="P:quotable.core.QuotableContext.Authors">
+            <summary>
+            Access all the authors in the database
+            </summary>
+        </member>
+        <member name="M:quotable.core.QuotableContext.OnModelCreating(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc/>
+        </member>
+        <member name="T:quotable.core.Quote">
+            <summary>
+            Quote 
+            </summary>
+        </member>
+        <member name="M:quotable.core.Quote.#ctor(System.String,System.String)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="title"></param>
+            <param name="author"></param>
+        </member>
+        <member name="P:quotable.core.Quote.Id">
+            <summary>
+            Quote's unique Id
+            </summary>
+        </member>
+        <member name="P:quotable.core.Quote.Title">
+            <summary>
+            The actual quote
+            </summary>
+        </member>
+        <member name="P:quotable.core.Quote.Author">
+            <summary>
+            Author of a quote
+            </summary>
+        </member>
+        <member name="P:quotable.core.Quote.Authors">
+            <summary>
+            The collection of authors of the document
+            </summary>
+        </member>
+        <member name="P:quotable.core.Quote.QuoteAuthor">
+            <summary>
+            The relation of document to author
+            </summary>
+        </member>
+        <member name="T:quotable.core.QuoteAuthor">
+            <summary>
+            Many to many relations between the Quote class and the Author class
+            </summary>
+        </member>
+        <member name="P:quotable.core.QuoteAuthor.QuoteId">
+            <summary>
+            A quote's Id in relation to author
+            </summary>
+        </member>
+        <member name="P:quotable.core.QuoteAuthor.Quote">
+            <summary>
+            A quote in relation to author
+            </summary>
+        </member>
+        <member name="P:quotable.core.QuoteAuthor.AuthorId">
+            <summary>
+            An Author's Id in relation to Quote
+            </summary>
+        </member>
+        <member name="P:quotable.core.QuoteAuthor.Author">
+            <summary>
+            An author in relation to Quote
+            </summary>
+        </member>
+    </members>
+</doc>

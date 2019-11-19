@@ -1,0 +1,139 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>quotable.api</name>
+    </assembly>
+    <members>
+        <member name="T:quotable.api.Controllers.QuotesController">
+            <summary>
+            API controller for the '/quotes' resource.
+            </summary>
+        </member>
+        <member name="M:quotable.api.Controllers.QuotesController.#ctor(quotable.core.QuotableContext)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="context">The database context to data access.</param>
+        </member>
+        <member name="M:quotable.api.Controllers.QuotesController.Get">
+            <summary>
+            Returns all the quotes.
+            </summary>
+            <returns>All the quotes.</returns>
+        </member>
+        <member name="M:quotable.api.Controllers.QuotesController.Get(System.Int64)">
+            <summary>
+            Gets a specific quote.
+            </summary>
+            <param name="id">The id of the quote.</param>
+            <returns>The quote.</returns>
+        </member>
+        <member name="T:quotable.api.Models.Author">
+            <summary>
+            Model for an author
+            </summary>
+        </member>
+        <member name="P:quotable.api.Models.Author.FirstName">
+            <summary>
+            Author's first name
+            </summary>
+        </member>
+        <member name="P:quotable.api.Models.Author.LastName">
+            <summary>
+            Author's last name
+            </summary>
+        </member>
+        <member name="T:quotable.api.Models.Quote">
+            <summary>
+            Model for a quote
+            </summary>
+        </member>
+        <member name="P:quotable.api.Models.Quote.Id">
+            <summary>
+            Quote's unique Id
+            </summary>
+        </member>
+        <member name="P:quotable.api.Models.Quote.Title">
+            <summary>
+            The actual quote
+            </summary>
+        </member>
+        <member name="P:quotable.api.Models.Quote.Author">
+            <summary>
+            Author of a quote
+            </summary>
+        </member>
+        <member name="T:quotable.api.Models.QuoteAuthor">
+            <summary>
+            Many to many relations between Quote and Author
+            </summary>
+        </member>
+        <member name="P:quotable.api.Models.QuoteAuthor.QuoteId">
+            <summary>
+            A quote's Id in relation to author
+            </summary>
+        </member>
+        <member name="P:quotable.api.Models.QuoteAuthor.Quote">
+            <summary>
+            A quote in relation to author
+            </summary>
+        </member>
+        <member name="P:quotable.api.Models.QuoteAuthor.AuthorId">
+            <summary>
+            An Author's Id in relation to Quote
+            </summary>
+        </member>
+        <member name="P:quotable.api.Models.QuoteAuthor.Author">
+            <summary>
+            An author in relation to Quote
+            </summary>
+        </member>
+        <member name="T:quotable.api.Program">
+            <summary>
+            Builds API
+            </summary>
+        </member>
+        <member name="M:quotable.api.Program.Main(System.String[])">
+            <summary>
+            Runs Builder
+            </summary>
+            <param name="args"></param>
+        </member>
+        <member name="M:quotable.api.Program.CreateWebHostBuilder(System.String[])">
+            <summary>
+            Creates Builder
+            </summary>
+            <param name="args"></param>
+            <returns></returns>
+        </member>
+        <member name="T:quotable.api.Startup">
+            <summary>
+            Startup class for API
+            </summary>
+        </member>
+        <member name="M:quotable.api.Startup.#ctor(Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="configuration"></param>
+        </member>
+        <member name="P:quotable.api.Startup.Configuration">
+            <summary>
+            Congifurates API 
+            </summary>
+        </member>
+        <member name="M:quotable.api.Startup.ConfigureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            This method gets called by the runtime. Use this method to add services to the container.
+            </summary>
+            <param name="services"></param>
+        </member>
+        <member name="M:quotable.api.Startup.Configure(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Hosting.IHostingEnvironment)">
+            <summary>
+            This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
+            </summary>
+            <param name="app"></param>
+            <param name="env"></param>
+        </member>
+    </members>
+</doc>
