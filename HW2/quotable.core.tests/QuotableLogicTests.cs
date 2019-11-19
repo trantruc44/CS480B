@@ -4,28 +4,15 @@ using quotable.api.Models;
 using quotable.core;
 using System.Collections.Generic;
 
-// Author: Truc Tran
-// Date: 10/15/2019
-// Class: CS480B
-
 namespace Tests
 {
-    /// <summary>
-    /// quotable logic tests
-    /// </summary>
     public class Tests
     {
-        /// <summary>
-        /// Setup
-        /// </summary>
         [SetUp]
         public void Setup()
         {
         }
 
-        /// <summary>
-        /// unit tests for generator.Get(int value)
-        /// </summary>
         [Test]
         public void Test()
         {

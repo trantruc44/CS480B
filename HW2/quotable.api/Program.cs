@@ -1,14 +1,10 @@
 ﻿using Microsoft.AspNetCore;
 using Microsoft.AspNetCore.Hosting;
 
-// Author: Truc Tran
-// Date: 10/15/2019
-// Class: CS480B
-
 namespace quotable.api
 {
     /// <summary>
-    /// Driver of quotable.api
+    /// 
     /// </summary>
     public class Program
     {
@@ -22,7 +18,7 @@ namespace quotable.api
         }
 
         /// <summary>
-        /// Builds the webhost
+        /// 
         /// </summary>
         /// <param name="args"></param>
         /// <returns></returns>

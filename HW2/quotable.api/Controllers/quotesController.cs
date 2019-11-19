@@ -6,15 +6,8 @@ using Microsoft.AspNetCore.Mvc;
 using quotable.api.Models;
 using quotable.core;
 
-// Author: Truc Tran
-// Date: 10/15/2019
-// Class: CS480B
-
 namespace quotable.api.Controllers
 {
-    /// <summary>
-    /// Controller to populate all quotes and specific quotes based on ID
-    /// </summary>
     [Route("api/[controller]")]
     [ApiController]
     public class quotesController : ControllerBase
@@ -31,10 +24,6 @@ namespace quotable.api.Controllers
             };
 
         // GET api/quotes
-        /// <summary>
-        /// Obtains all quotes
-        /// </summary>
-        /// <returns></returns>
         [HttpGet]
         public ActionResult<quotableData[]> Get()
         {
@@ -42,11 +31,6 @@ namespace quotable.api.Controllers
         }
 
         // GET api/quotes/5
-        /// <summary>
-        /// Obtain a specific quote based on ID
-        /// </summary>
-        /// <param name="id"></param>
-        /// <returns></returns>
         [HttpGet("{id}")]
         public ActionResult<quotableData> Get(int id)
         {
@@ -55,19 +39,19 @@ namespace quotable.api.Controllers
 
         // POST api/quotes
         [HttpPost]
-        private void Post([FromBody] string value)
+        public void Post([FromBody] string value)
         {
         }
 
         // PUT api/quotes/5
         [HttpPut("{id}")]
-        private void Put(int id, [FromBody] string value)
+        public void Put(int id, [FromBody] string value)
         {
         }
 
         // DELETE api/quotes/5
         [HttpDelete("{id}")]
-        private void Delete(int id)
+        public void Delete(int id)
         {
         }
     }
